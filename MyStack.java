@@ -23,6 +23,17 @@ public class MyStack {
 		return myLinkedList.getHead();
 	}
 	
+	/**
+	 * UC 2
+	 * 
+	 * @param node
+	 * @return
+	 */
+	@SuppressWarnings("rawtypes")
+	public INode pop() {
+		return myLinkedList.pop();
+	}
+	
 	public void printStack() {
 		myLinkedList.printLinkList();
 	}

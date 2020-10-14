@@ -224,6 +224,9 @@ public class MyLinkedList {
 	public void printLinkList() {
 		StringBuffer myNodes = new StringBuffer("My Nodes : ");
 		INode tempNode = head;
+		if (tempNode == null) {
+			System.out.println("EMPTY LIST");
+		}
 		while (tempNode.getNext() != null) {
 			myNodes.append(tempNode.getKey());
 			if (!tempNode.equals(tail)) {
