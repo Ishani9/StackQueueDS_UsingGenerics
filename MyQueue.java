@@ -28,6 +28,17 @@ public class MyQueue {
 		return myLinkedList.getTail();
 	}
 	
+	/**
+	 * UC 2
+	 * 
+	 * @param node
+	 * @return
+	 */
+	@SuppressWarnings("rawtypes")
+	public INode dequeue() {
+		return myLinkedList.pop();
+	}
+	
 	public void printQueue() {
 		myLinkedList.printLinkList();
 	}
